@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Detail Perizinan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 500px;
+      background-color: #f0f0f0;
+      min-height: 100vh;
+      padding: 12px 5px 60px 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* HEADER — kotak rounded penuh, terpisah dari card */
+    .header-box {
+      background-color: #1b2044;
+      color: #ffffff;
+      text-align: center;
+      padding: 18px 20px;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+    }
+
+    /* CARD data — terpisah dari header */
+    .card {
+      background-color: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+    }
+
+    /* Setiap baris */
+    .detail-row {
+      display: flex;
+      align-items: center;
+      padding: 26px 24px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      flex: 0 0 180px;
+      font-weight: 700;
+      font-size: 15px;
+      color: #1a1a2e;
+      line-height: 1.4;
+    }
+
+    .value {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3a3a3a;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+
+    .value.aktif {
+      color: #1a6fd4;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header terpisah, rounded semua sisi -->
+    <div class="header-box">Detail Perizinan</div>
+
+    <!-- Card data -->
+    <div class="card">
+
+      <div class="detail-row">
+        <div class="label">Nomor Izin</div>
+        <div class="value"> 04.PI-92..26.0165</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">NIB</div>
+        <div class="value">1611210023892</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Nama Perusahaan</div>
+        <div class="value">GOLDEN LEAF GROUP</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Jenis Perizinan</div>
+        <div class="value">impor</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Nama Perizinan</div>
+        <div class="value">PI Produk Holtikultura (API-U) </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Tanggal Terbit Izin</div>
+        <div class="value">05 Maret 2026</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Tanggal Habis Izin</div>
+        <div class="value">31 Desember 2026</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Status</div>
+        <div class="value aktif">AKTIF</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Status Izin Realisasi</div>
+        <div class="value">N/A</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
 
